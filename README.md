@@ -8,12 +8,14 @@ Login: A login feature using OTP verification for mobile numbers or using email 
 Creating Firebase:
 Under Firestore create a 'users' collection and 'user' document under it. 
 The fields of user document are as follows:
-createAt  (timestamp)
-email "" (string)
-firstName "" (string)
-lastName "" (string)
-mobile "" (string)
-password ""
+```
+ - createAt  (timestamp)
+ - email "" (string)
+ - firstName "" (string)
+ - lastName "" (string)
+ - mobile "" (string)
+ - password ""
+```
 
 In src/firebase.js file, please put in your firebase web app configurations.
 
