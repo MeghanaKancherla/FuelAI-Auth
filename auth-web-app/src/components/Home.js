@@ -1,13 +1,14 @@
 import React from 'react';
+import '../style/style.css';
 
 const Home = ({ userDetails }) => {
   return (
-    <div className="container">
-      <h2>Welcome to the Home Page</h2>
+    <div className="home-container">
+      <h2 className='home-heading'> Welcome to the Home Page</h2>
       {userDetails ? (
         <div>
           <p>You are logged in with the following details:</p>
-          <ul>
+          <ul className='user-details'>
             <li><strong>Email:</strong> {userDetails.email}</li>
             <li><strong>First Name:</strong> {userDetails.firstName}</li>
             <li><strong>Last Name:</strong> {userDetails.lastName}</li>

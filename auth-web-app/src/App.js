@@ -5,6 +5,7 @@ import SignUp from './components/Signup';
 import Home from './components/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PhoneAuth from './components/PhoneAuth';
+import "./App.css";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -18,7 +19,7 @@ function App() {
 
   return (
     <Router>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
           <Link className="navbar-brand" to="/">Firebase Auth</Link>
           <button
@@ -52,7 +53,7 @@ function App() {
           </div>
         </div>
       </nav>
-      <div className="container mt-4">
+      <div className="content-container">
         <Routes>
           <Route path="/" element={<Home userDetails={userDetails} />} />
           <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} setUserDetails={setUserDetails}/>} />

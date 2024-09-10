@@ -1,0 +1,15 @@
+.home-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 45px rgba(224, 170, 255, 0.5); /* Soft shadow */
+    max-width: 600px; /* Maximum width for the container */
+    width: 100%; /* Ensure responsive width */
+    margin: 20px auto; /* Center the container */
+    text-align: center;
+  }
+  
+  .home-heading {
+    font-size: 2rem;
+    color: #5D3FD3;
+  }
